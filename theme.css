@@ -1,0 +1,67 @@
+#body1{
+	background-color: MistyRose;
+}
+
+.partBande{
+	background-color: silver;
+	padding: 10px;
+    width: auto;
+  	height: 20px;
+    border: LightSlateGray ridge;
+}
+
+.partBande a{
+	text-decoration: none;
+	font-style: italic;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.souspartBande{
+	background-color: LightGrey;
+	border: LightGrey solid;	
+}
+
+.souspartBande ul {
+	background-color: LightSlateGray;
+	border: 1px white solid;
+}
+
+.souspartBande ul a{
+	color: white;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.bande { /* menu */
+	float: left;
+	width: 200px;
+	border: Double Silver;
+	
+}
+.formulaire { /* menu */
+	margin-left: 210px;
+	
+}
+
+#Membre{
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+	background-color: #5F8CA3;
+	border: Double #5F8CA3;
+}
+
+#NouveauMembre{
+	float: left;
+	margin-top: 10px;
+	margin-left: 110px;
+	border-radius: 5px;
+	background-color: #A2B5BF;
+	border: Double #A2B5BF;
+}
+
+
