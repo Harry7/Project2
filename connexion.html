@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Connexion-Espace membre</title>
+		<link href="theme.css" rel="stylesheet">
+		<script type="text/javascript" src="action1.js"></script>
+	</head>
+<body id="body1">
+		 	<nav class="bande">
+				  <ul>
+				     <div class="partBande" onclick="modifieElementListe(1)">
+				    	<a>College</a>
+				    </div>
+				    <div class="souspartBande" name="College" id="College" style="display:none;">
+					  	<ul><a href="#">Accueil</a></ul>
+						<ul><a href="#">À propos</a></ul>
+						<ul><a href="#">Contact</a></ul>												   						
+				    </div>
+				     <div class="partBande" onclick="modifieElementListe(2)">
+				    	<a>Lycee</a>
+				    </div>
+				    <div class="souspartBande" name="Lycee" id="Lycee" style="display:none;">
+				    	<ul><a href="#">Accueil</a></ul>
+						<ul><a href="#">À propos</a></ul>
+						<ul><a href="#">Contact</a></ul>				    
+				    </div>
+				    <div class="partBande" onclick="modifieElementListe(3)">
+				    	<a>Superieur</a>
+				    </div>
+				    <div class="souspartBande" name="Superieur" id="Superieur" style="display:none;">
+					   <ul><a href="#">Accueil</a></ul>
+						<ul><a href="#">À propos</a></ul>
+						<ul><a href="#">Contact</a></ul>
+				    </div>
+				  </ul>
+				</nav>
+			
+			
+			<div class="formulaire">
+			
+				<span id="Membre">
+						<h3>Espace Membre</h3>
+						<form action="">
+							<label for="nomUser">Login <span class="requis">*</span></label>
+							<input type="text" id="nomUser" name="nomUser" placeholder="entrez le login" size="30" maxlength="30" />
+							<br />
+			
+							<label for="prenomeleve">Mot de passe <span class="requis">*</span></label>
+							<input type="password" id="motDePasse" name="motDePasse" placeholder="entrez le mot de passe" size="30" maxlength="30"/>
+							<br><br>
+							
+							<input type="reset" value="Reset" onClick="restCreationEleve()"/>
+							<input type="button" value="valider" onClick="validerFormulaireEleve()"/>
+						</form>
+			 	</span>
+				<span id="NouveauMembre">
+						<h3>Nouveau Membre</h3>
+						<form action="">
+							<label for="nomUser">Login <span class="requis">*</span></label>
+							<input type="text" id="nomUser" name="nomUser" placeholder="entrez le login" size="30" maxlength="30" />
+							<br />
+			
+							<label for="motDePasse">Mot de passe <span class="requis">*</span></label>
+							<input type="password" id="motDePasse" name="motDePasse" placeholder="entrez le mot de passe" size="30" maxlength="30"/>
+							<br>
+							<label for="birthday">Date de naissance <span class="requis">*</span></label>
+							<input type="text" id="birthday" name="birthday" placeholder="entrez votre datte de naissance" size="30" maxlength="30" />
+							<br />
+			
+							<label for="adresse">Adresse <span class="requis">*</span></label>
+							<input type="text" id="adresse" name="adresse" placeholder="entrez l'adresse" size="30" maxlength="30"/>
+							<br>
+							<label for="niveau">niveau Scolaire <span class="requis">*</span></label>
+							<select name="selectionEleve" id="selectionEleve"  >
+									<option value="6" > 6ème</option>
+									<option value="5" > 5ème</option>
+									<option value="4" > 4ème</option>
+									<option value="3" > 3ème</option>
+									<option value="2" > 2nd</option>
+									<option value="1" > 1ère</option>
+									<option value="Tle ES" > Tle ES</option>
+									<option value="Tle S" > Tle S</option>
+									<option value="Tl Autre" > Tle Autre</option>
+							</select>
+							<br />
+			
+							<label for="autre">Autre <span class="requis">*</span></label>
+							<input type="text" id="autre" name="autre" placeholder="autre" size="30" maxlength="30"/>
+							<br>
+							<br>
+							<input type="reset" value="Reset" onClick="restCreationEleve()"/>
+							<input type="button" value="valider" onClick="validerFormulaireEleve()"/>
+						</form>
+				</span>
+			</div>
+		
+</body>
+</html>
